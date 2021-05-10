@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id = 'main'>
+        <form action="#" onsubmit="generatePassword();return false">
+            <h1>Password Generator</h1>
+            <input type="text" placeholder="Length" id="length">
+            Lowercase letters:<input type="checkbox" name="choice" id="lower-case">
+            Uppercase letters:<input type="checkbox" name="choice" id="upper-case">
+            Numbers<input type="checkbox" name="choice" id="num">
+            Symbols<input type="checkbox" name="choice" id="sym">
+            <button type="submit">Generate</button>
+        </form>
+        <input id="display-pass"></input>
+        <button onclick="copyText()">Copy to Clipboard</button>
+        <div id="copy"></div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
